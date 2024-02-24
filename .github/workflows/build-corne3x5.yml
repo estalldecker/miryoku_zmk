@@ -1,0 +1,15 @@
+# Copyright 2023 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Build Example Corne-ish Zen Custom'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["nice_nano_v2"]'
+      shield: '["corne_left","corne_right"]'
+      custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
+      # kconfig: '["CONFIG_ZMK_DISPLAY_HIDE_MOMENTARY_LAYERS=y\nCONFIG_CUSTOM_WIDGET_LAYER_STATUS_HIDE_HEADING=y\nCONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU=y\nCONFIG_IL0323_INVERT=y"]'
+      # branches: '["zmkfirmware/zmk/main caksoylar/zmk/caksoylar/zen-v1+v2 caksoylar/zmk/feat/mouse-keys-3.2"]'

@@ -1,4 +1,5 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
-//MIRYOKU_ALPHAS=QWERTY
-
+#define MIRYOKU_ALPHAS_QWERTY
+#define MIRYOKU_TAP_QWERTY
+#define MIRYOKU_CLIPBOARD_WIN

@@ -9,7 +9,7 @@ jobs:
     secrets: inherit
     with:
       board: '["nice_nano_v2"]'
-      shield: '["corne_left","corne_right"]'
+      shield: '["corne_left nice_view_adapter nice_view","corne_right nice_view_adapter nice_view"]'
       custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
       # kconfig: '["CONFIG_ZMK_DISPLAY_HIDE_MOMENTARY_LAYERS=y\nCONFIG_CUSTOM_WIDGET_LAYER_STATUS_HIDE_HEADING=y\nCONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU=y\nCONFIG_IL0323_INVERT=y"]'
       # branches: '["zmkfirmware/zmk/main caksoylar/zmk/caksoylar/zen-v1+v2 caksoylar/zmk/feat/mouse-keys-3.2"]'
